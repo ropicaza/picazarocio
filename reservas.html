@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/83f0fd0824.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@100;300;700;900&family=Sofia&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Reservá tu lugar</title>
+</head>
+
+
+
+<body style="background-image: linear-gradient(rgba(192, 184, 184, 0.781),rgba(219, 205, 205, 0.774)), url(fondoreservas.jpg);">
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-plane"></i>
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" target="_blank">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" >Reservas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="foto RO.jpg" />
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="sobremi.html" target="_blank">Sobre Mi</a>
+                <a class="dropdown-item" href="https://www.lewagon.com/es/buenos-aires" target="_blank">Gracias LeWagon!</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+            <h3 class="text-center mx-2 my-4"> RESERVÁ CON NOSOTROS</h2>
+
+              <div class="container">
+                <div class="row d-flex justify-content-center my-4">
+                  <div class="col-12 col-sm-8">
+                    <div class="bg-light text-dark border px-5 py-4">
+
+                      <h4 class="text-center my-1 mb-4">Completá tus datos</h2>
+                        <form id="info">
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="name">Nombre</label>
+                              <input type="name" class="form-control" id="name" placeholder="Edith">
+                              <small id="nameHelp" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="lastName">Apellido</label>
+                              <input type="lastName" class="form-control" id="lastName" placeholder="Piaf">
+                              <small id="lastNameHelp" class="form-text text-danger"></small>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAddress">Tour</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Elegí un tour..</option>
+                              <option>Visita Torre Eiffel</option>
+                              <option>Visita Arco del Triunfo</option>
+                              <option>Visita Montmatre</option>
+                              <option>Tour Gastronómico</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="start">Fecha</label>
+
+                            <input type="date" id="start" name="trip-start"
+                                   value="2020-07-23"
+                                   min="2020-07-01" max="2021-12-31">
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Nacionalidad</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputState">Idioma</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Elegí el idioma...</option>
+                                <option>Español</option>
+                                <option>Inglés</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="exampleFormControlSelect1">Pax</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Confirmo <strong>"Políticas y condiciones"</strong>
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-danger">Reservar</button>
+                        </form>
+
+                    </div>    
+                  </div>      
+                </div>
+              </div>
+      <div class="footer">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/ropicaza/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <a href="https://www.linkedin.com/in/rocio-belen-picaza-a5996833/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <a href="https://www.behance.net/rociopicazadg" target="_blank"><i class="fab fa-behance"></i></a></li>
+            <a href="https://github.com/ropicaza/picazadesign" target="_blank"><i class="fab fa-github"></i></a></li>
+        </div>
+        <div class="footer-copyright">
+            Web realizada gracias a Le Wagon <i class="fas fa-heart"></i>
+          </div>
+        
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>
